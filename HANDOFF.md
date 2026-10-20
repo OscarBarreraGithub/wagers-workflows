@@ -15,11 +15,14 @@ cd wagers-workflows
 > authorized cluster so I can module load it. Inspect Linux x86_64, site
 > Python/Mamba/Singularity prerequisites and authorized account/storage. Reuse an
 > accessible verified existing module when appropriate; otherwise configure and
-> run pinned installer into new final install/module paths in allocated compute.
-> Run documented verification for the new installation and give me exact module
-> use/load commands and a concise result. Ask only missing access/site/storage
-> decisions; don't guess accounts/ACLs, run compute on login nodes, or
-> reinstall/retest an already verified owner setup.
+> install pinned code with the installer into new final install/module paths in
+> allocated compute. Preserve required installer runtime probes; ensure module
+> loading and basic executable/runtime checks succeed for initial code handoff.
+> Give me exact `module use`/`module load` commands and a concise result, reporting
+> only checks actually run. The full tutorial suite, real-data/biology and ordinary
+> user acceptance may be scheduled later and must not block initial code handoff.
+> Ask only missing access/site/storage decisions; don't guess accounts/ACLs, run
+> compute on login nodes, or reinstall/retest an already verified owner setup.
 
 Follow the [installer contract](onboarding/deploy/install/README.md) for actual
 site preconditions: Linux x86_64, selected site Python 3.12+, Mamba,
@@ -89,7 +92,9 @@ private configs/receipts and permitted artifact backups separately. The installe
 is an online pinned rebuild, not a demonstrated offline restore. It neither
 allocates compute nor submits a job. Require the fresh installation, all five
 suites through its new module, shell load/unload and intended-user access evidence
-before declaring that release ready. The runtime task remains open.
+before declaring a fully validated release. These detailed installer acceptance
+criteria apply to a fully validated release, not the initial code installation
+handoff. The runtime task remains open.
 
 ## Copy to your usage agent
 

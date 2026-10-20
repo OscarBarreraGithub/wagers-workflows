@@ -15,11 +15,14 @@ cd wagers-workflows
 > authorized cluster so I can module load it. Inspect Linux x86_64, site
 > Python/Mamba/Singularity prerequisites and authorized account/storage. Reuse an
 > accessible verified existing module when appropriate; otherwise configure and
-> run pinned installer into new final install/module paths in allocated compute.
-> Run documented verification for the new installation and give me exact module
-> use/load commands and a concise result. Ask only missing access/site/storage
-> decisions; don't guess accounts/ACLs, run compute on login nodes, or
-> reinstall/retest an already verified owner setup.
+> install pinned code with the installer into new final install/module paths in
+> allocated compute. Preserve required installer runtime probes; ensure module
+> loading and basic executable/runtime checks succeed for initial code handoff.
+> Give me exact `module use`/`module load` commands and a concise result, reporting
+> only checks actually run. The full tutorial suite, real-data/biology and ordinary
+> user acceptance may be scheduled later and must not block initial code handoff.
+> Ask only missing access/site/storage decisions; don't guess accounts/ACLs, run
+> compute on login nodes, or reinstall/retest an already verified owner setup.
 
 See [setup details and site prerequisites](HANDOFF.md#copy-to-your-setup-agent).
 Cold portability job `54148277` is unverified/pending; actual site prerequisites
