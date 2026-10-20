@@ -1,0 +1,1 @@
+study_id,animal_id,muscle_id,section_id,field_id,run_id,review_object_id,original_fiber_number,decision,original_csa_um2,reviewed_csa_um2,original_cnf,reviewed_cnf,dystrophin_positive,gfp_positive,threshold_rule_id,reason,annotation_path,reviewer_id,review_date

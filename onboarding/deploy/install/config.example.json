@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_repository": "REQUIRED_ABSOLUTE_LAB_CONTROLLED_REPOSITORY",
+  "source_commit": "REQUIRED_FULL_REVIEWED_40_HEX_COMMIT_INCLUDING_THIS_INSTALLER",
+  "install_root": "REQUIRED_ABSOLUTE_NONEXISTENT_FINAL_INSTALL_ROOT",
+  "module_root": "REQUIRED_ABSOLUTE_NONEXISTENT_MODULE_ROOT",
+  "module_name": "wagers-tools/2026.10-env001",
+  "python_module": "REQUIRED/EXACT_SITE_PYTHON_VERSION",
+  "system_path": ["/usr/bin"],
+  "site": {
+    "python": {
+      "prefix": "REQUIRED_ABSOLUTE_SITE_PYTHON_PREFIX",
+      "executable": "REQUIRED_ABSOLUTE_SITE_PYTHON_EXECUTABLE",
+      "sha256": "REQUIRED_EXECUTABLE_SHA256",
+      "version": "REQUIRED_EXACT_PYTHON_DOUBLE_DASH_VERSION_OUTPUT"
+    },
+    "mamba": {
+      "prefix": "REQUIRED_ABSOLUTE_SITE_MAMBA_PREFIX",
+      "executable": "REQUIRED_ABSOLUTE_SITE_PREFIX/bin/mamba",
+      "sha256": "REQUIRED_EXECUTABLE_SHA256",
+      "version": "REQUIRED_EXACT_MAMBA_DOUBLE_DASH_VERSION_OUTPUT"
+    },
+    "singularity": {
+      "prefix": "REQUIRED_ABSOLUTE_SITE_CONTAINER_RUNTIME_PREFIX",
+      "executable": "REQUIRED_ABSOLUTE_SINGULARITY_OR_APPTAINER_EXECUTABLE",
+      "sha256": "REQUIRED_EXECUTABLE_SHA256",
+      "version": "REQUIRED_EXACT_RUNTIME_DOUBLE_DASH_VERSION_OUTPUT"
+    },
+    "git": {
+      "prefix": "REQUIRED_ABSOLUTE_SITE_GIT_PREFIX",
+      "executable": "REQUIRED_ABSOLUTE_GIT_EXECUTABLE",
+      "sha256": "REQUIRED_EXECUTABLE_SHA256",
+      "version": "REQUIRED_EXACT_GIT_DOUBLE_DASH_VERSION_OUTPUT"
+    },
+    "curl": {
+      "prefix": "REQUIRED_ABSOLUTE_SITE_CURL_PREFIX",
+      "executable": "REQUIRED_ABSOLUTE_CURL_EXECUTABLE",
+      "sha256": "REQUIRED_EXECUTABLE_SHA256",
+      "version": "REQUIRED_COMPLETE_CURL_DOUBLE_DASH_VERSION_OUTPUT_INCLUDING_NEWLINES"
+    }
+  }
+}

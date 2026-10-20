@@ -1,0 +1,26 @@
+{
+  "imagej": {
+    "version": "1.54p",
+    "url": "https://repo.maven.apache.org/maven2/net/imagej/ij/1.54p/ij-1.54p.jar",
+    "sha256": "2e1a09961dfb41cee66ddc821b2577a41a072566ce45a49bae69267099741e20",
+    "license": "Public domain",
+    "license_url": "https://imagej.net/ij/disclaimer.html",
+    "metadata_url": "https://repo.maven.apache.org/maven2/net/imagej/ij/1.54p/ij-1.54p.pom",
+    "api_source_url": "https://github.com/imagej/ImageJ/blob/v1.54p/ij/plugin/filter/ParticleAnalyzer.java"
+  },
+  "jdk": {
+    "version": "Temurin 21.0.8+9",
+    "license": "GPL-2.0 with Classpath Exception (see extracted legal/ and NOTICE)",
+    "release_url": "https://github.com/adoptium/temurin21-binaries/releases/tag/jdk-21.0.8%2B9",
+    "Darwin-arm64": {
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.8_9.tar.gz",
+      "sha256": "59422c2292ae4e76b87e00d8808dbe49cffa39af731e08bb0292ddb0af4e0261",
+      "java_home": "jdk-21.0.8+9/Contents/Home"
+    },
+    "Linux-x86_64": {
+      "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.8_9.tar.gz",
+      "sha256": "f2dc5418092c43003db8f9005c4a286e1c0104fea96ccdd49e8ebd037cac9219",
+      "java_home": "jdk-21.0.8+9"
+    }
+  }
+}

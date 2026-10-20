@@ -1,0 +1,53 @@
+{
+  "actual_host": "Darwin",
+  "actual_linux_execution": "NOT_RUN",
+  "change": "suite report records actual execution_platform; Linux final linux=PASS/FAIL follows final outcome, nonLinux=NOT_RUN; exception explicitly sets FAIL. No model/selection/ledger changes.",
+  "check_note": "Eight classifier cases, five syntax checks, two injected pre-model exception-report cases and four integrity/isolation checks. Injected Linux/Darwin labels are reporting fixtures only, not Linux execution. No numerical imports or fits.",
+  "command": "PYTHONPATH=. .runtime/bin/python -B runs/check_reporting_revision1.py",
+  "failed": 0,
+  "full_suite_executed": false,
+  "historical_runs": {
+    "24_path_checks": "8a5ff21728c63066388402954861549eb405d623",
+    "96_checks": "590c6471591e32e3f6bb3eaeb25589db34580e9a",
+    "records_and_hashes": "Preserved unchanged; not relabelled as tests of current source."
+  },
+  "independent_delta_review": "PENDING; same reviewer manager-owned",
+  "linux_full_suite": "NOT_RUN; manager-owned gate after revision review",
+  "model_executed": false,
+  "passed": 19,
+  "python": "3.12.12",
+  "python_executable_sha256": "51041dcef59a872d4e411dfd26f6264f70bd67294bebbe52a707490726f0d1a6",
+  "resolved_path_guidance": "README documents symlinked-ancestor refusal and installed-Python Path.expanduser().resolve() for physical new user destinations; path enforcement unchanged.",
+  "retained_ignored_report": {
+    "path": "runs/reporting-revision1/focused-report.json",
+    "sha256": "5f7681a46555be100f14b9cc6a22070f9440a3b2b7839231f8176b0d200be264"
+  },
+  "runtime_warning_diagnosis": {
+    "attribution_review": "51c34bf6-5925-4f10-b24a-19337c52d670",
+    "limits": "Attribution to independent review; no new warning investigation in this revision. Historic UNRESOLVED notes remain historical and are superseded by this diagnosis. No suppression or claim all warnings harmless; finalLinux fullsuite remains manager gate.",
+    "manager_acceptance_note": "e7a34149-c8a3-4fc1-9eb4-60799f53257c",
+    "reviewer_evidence": "Independent pure-Python Cholesky recomputation of1320savedproposal-score rows matched within1.2e-14; NumPy-only AppleAccelerate reproduces spurious floating-point matmul flags, finite matmul/einsum agreement<=1.8e-15.",
+    "status": "DIAGNOSED_FOR_RECORDED_MAC_PREDICTIONS"
+  },
+  "sanitized_evidence": {
+    "evidence/reporting-revision1-check.py": "4af3fe14f4d9b42949db5585f3040c8d1ba465483c61a4303dafa00cf3032a91",
+    "evidence/reporting-revision1-report.json": "566ed5c5003f0d3a7ba80543bed44312138f7bd91295c23eda98628e46b3bb29"
+  },
+  "scope": "Revision1 reporting classifier/syntax/error paths only; not full-suite-executed",
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_PROMPT.md": "785dde5b0de3c6f9e2d22969c32ec5b4e66d58403061e3e4f28841def39fbd7e",
+    "README.md": "2b114e45ec2e9c165ca25c70b715a0d6cc8bb629b581a9fe3dee6d9527dac861",
+    "contract.py": "4c944df5cd6cdab93874a238ff199821f6bdf385f66814dcc020112984821ee6",
+    "proposer.py": "c165c41b405cf8f79b94373ca23d51c405628eb8e93467f00328b12d84247bfe",
+    "requirements.txt": "c7f6b632c4c42609ad1e3f7c9942f31674e179439572f5a00dc077716b6ab836",
+    "simulator.py": "7e58430841a940835bd1d8a774b228b1eca2aa08d61c9b178779d26341f9ff30",
+    "suite.py": "860476e862cf252b524c648d25a41ee173f2e4a588c50fc96f55c55157d5f400",
+    "tutorial.py": "bd5ad95d47238e64653a6eb14ee953e0503606088b4eeb69eae9023a09963b1e"
+  },
+  "ssh_slurm_install": "NOT_RUN",
+  "status": "PASS",
+  "tested_commit": "57c7a8313526ec4d17f57f24c3cd13f405cf372d",
+  "tested_git_status": "",
+  "working_directory": "onboarding/tutorials/adaptive-screen"
+}

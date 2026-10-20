@@ -1,0 +1,13 @@
+# Lab-agent task: synthetic culture-count gate
+
+Use the reviewed `runner.py` and only original synthetic tutorial inputs. Do not replace package measurements with your own segmentation, infer zero from an unreadable image, relax the version assertion, fabricate a SIF receipt, pool donors/experiments or treat fields/objects as biological replicates.
+
+1. Read README.md and record the exact reviewed Git commit and tutorial SHA256 values. Run the local unit command. Label it **host-only validation**, never CellProfiler execution.
+2. If the environment is the local Mac or has no installed Linux amd64 Singularity/Apptainer, stop the runtime part and report **package gate pending / not run**. Do not install Docker, start daemons, SSH or change existing runtimes.
+3. Have the manager review this candidate independently, then own the compute allocation/submission. Use the README installation recipe with private scratch paths, or an explicit existing `--sif` with its preserved matching receipt. Pull only the exact official digest. Do not stage caches, SIFs or generated artifacts.
+4. Run the unmodified `suite` command on Linux amd64. Preserve `suite-report.json`, each `case-report.json`, pull/runtime/package logs, tool versions, measured CSVs and segmentation labels. Require suite exit zero, overall status passed and package_gate passed. Skipped/not-run checks cannot satisfy this gate.
+5. Verify real counts for all twelve fields, including the valid blank field's zero. Verify summed wells and matched control means: E01/D01 controls 5 and 5, treated 10, normalized 2; E02/D02 controls 4 and 4, treated 2, normalized 0.5. The zero-control variant must refuse normalization after real segmentation.
+6. Inspect refusals for duplicate/missing/invalid identities, removed metadata row, missing/corrupt files, existing output, and overlap. Verify the corrected duplicate case executes the real package at its previously rejected output path. Check originals and sentinel hashes before/after every case; preserve failed evidence and use a fresh output for any retry after execution began.
+7. Report exact commands, commit/source hashes, container digest/SIF hash, runtime/package versions, case outcomes, and unresolved failures. Keep package gate pending unless the real Linux suite was observed passing. Describe this as a synthetic mechanics test only; make no biological hit, survival, self-renewal, fusion, regeneration or functional stem-cell claim.
+
+If any check fails, report that failure with its logs and leave full acceptance open. Request manager direction for broader scope or changing science/validation criteria.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wagers Workflows"
+  short_description: "Route questions to five Wagers tutorials"
+  default_prompt: "Use $wagers-workflows to choose the relevant Wagers tutorial and check prerequisites before running it."

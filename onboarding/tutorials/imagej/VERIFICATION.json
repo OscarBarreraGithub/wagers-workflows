@@ -1,0 +1,281 @@
+{
+  "scope": "Reviewed-region measurement mechanics only; no segmentation, classification, human review, GUI or biological validation",
+  "command": "python3 tutorial.py suite --out runs/local-verified",
+  "tested_commit": "4e2e9e768a6e2f7a5524edfc65471e7d2cf10530",
+  "package_git_status_at_test": "",
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "runtime-lock.json": "e3264167ad7fda2fe4cff1c528c6b321b276e5358f45919b6175943a8c2466fb",
+    "ImageJMeasure.java": "cff687059dd12fb3bf900d2dcf3dd7b1af997c37063d2ef3c545ba405ac651b0",
+    "tutorial.py": "b1e0b28bfe520263f6dfba7d4ef0ac47668b929507af17a81b6e9ff7a18fed59",
+    "README.md": "de82f14679f35121b81c5ae25f20c9ab2f362ebe0a7585d95845266e45f67e12",
+    "AGENT_PROMPT.md": "baac5c2ce6ff97be1b5ec32cf013b586062e79655126f9dd0601afe076496f27"
+  },
+  "status": "pass",
+  "cases_passed": 22,
+  "cases_total": 22,
+  "elapsed_seconds": 8.167629457995645,
+  "timing_scope": "Suite including JDK extraction, compilation, all cases and retry; official artifact downloads occurred separately before this invocation",
+  "platform": "Darwin-arm64",
+  "python": "3.14.7",
+  "java": "openjdk 21.0.8 2025-07-15 LTS\nOpenJDK Runtime Environment Temurin-21.0.8+9 (build 21.0.8+9-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.8+9 (build 21.0.8+9-LTS, mixed mode, sharing)",
+  "imagej_version": "1.54p",
+  "java_binary_sha256": "0045ae168ee132bbf469a26fb17dac6d1dee431c9b7826474f3b6ee574a997c9",
+  "compiled_runner_sha256": "f024c9da976a28540a3edb8ebb21d53f612fabf521a67136ec584df5537ec7ad",
+  "headless": true,
+  "runtime_lock_sha256": "e3264167ad7fda2fe4cff1c528c6b321b276e5358f45919b6175943a8c2466fb",
+  "original_inputs_unchanged": true,
+  "correction_restored_original_hashes": true,
+  "measured_fibers": 18,
+  "measured_gfp_fields": 12,
+  "observed_fiber_muscle_summary": [
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "GA",
+      "scope": "all_reviewed",
+      "n": "6",
+      "mean_area_um2": "13.166666666666666"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "GA",
+      "scope": "sampled_regenerating",
+      "n": "4",
+      "mean_area_um2": "11.0"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "TA",
+      "scope": "all_reviewed",
+      "n": "6",
+      "mean_area_um2": "5.266666666666667"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "TA",
+      "scope": "sampled_regenerating",
+      "n": "4",
+      "mean_area_um2": "4.4"
+    },
+    {
+      "study": "SYN",
+      "animal": "A2",
+      "muscle": "TA",
+      "scope": "all_reviewed",
+      "n": "6",
+      "mean_area_um2": "6.583333333333333"
+    },
+    {
+      "study": "SYN",
+      "animal": "A2",
+      "muscle": "TA",
+      "scope": "sampled_regenerating",
+      "n": "4",
+      "mean_area_um2": "5.5"
+    }
+  ],
+  "observed_gfp_section_counts": [
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "GA",
+      "section": "S1",
+      "reviewed_positive_count": "1"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "GA",
+      "section": "S2",
+      "reviewed_positive_count": "4"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "TA",
+      "section": "S1",
+      "reviewed_positive_count": "3"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "TA",
+      "section": "S2",
+      "reviewed_positive_count": "5"
+    },
+    {
+      "study": "SYN",
+      "animal": "A2",
+      "muscle": "TA",
+      "section": "S1",
+      "reviewed_positive_count": "3"
+    },
+    {
+      "study": "SYN",
+      "animal": "A2",
+      "muscle": "TA",
+      "section": "S2",
+      "reviewed_positive_count": "1"
+    }
+  ],
+  "observed_gfp_muscle_maxima": [
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "GA",
+      "section_n": "2",
+      "max_reviewed_positive_count": "4",
+      "max_sections": "S2"
+    },
+    {
+      "study": "SYN",
+      "animal": "A1",
+      "muscle": "TA",
+      "section_n": "2",
+      "max_reviewed_positive_count": "5",
+      "max_sections": "S2"
+    },
+    {
+      "study": "SYN",
+      "animal": "A2",
+      "muscle": "TA",
+      "section_n": "2",
+      "max_reviewed_positive_count": "3",
+      "max_sections": "S1"
+    }
+  ],
+  "cases": [
+    {
+      "name": "control",
+      "pass": true,
+      "exit_code": 0
+    },
+    {
+      "name": "independent_synthetic_truth",
+      "pass": true
+    },
+    {
+      "name": "missing_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "nonfinite_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "infinite_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "zero_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "negative_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "overflow_calibration",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "invalid_identifier",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "changed_identifier",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "changed_hierarchy",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "unreviewed",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "invalid_dimensions",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "invalid_sample",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "nonbinary_mask",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "disconnected_fiber",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "empty_fiber",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "changed_hash",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "output_reuse",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "input_overlap",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "input_ancestor_overlap",
+      "pass": true,
+      "exit_code": 1
+    },
+    {
+      "name": "corrected_retry",
+      "pass": true,
+      "exit_code": 0
+    }
+  ],
+  "local_ignored_evidence": {
+    "directory": "runs/local-verified",
+    "sha256": {
+      "suite-report.json": "cb11b1662c1a1c0dfbe13219d9a5ab21b3cd747333e0cf8b0c856afde17e3620",
+      "suite-output-manifest.json": "3867ce00ba0df892079b6071c1f47fffbf334fb8cceb82c297e477bf3827d991",
+      "original-input-hashes.json": "e5c2f3a6b1ec950d8ab377881e483b454eb384b01ff85bcd3857bd83652d7b86",
+      "control/run-report.json": "f2efcc80a34d86288063a4e8b5cbb333f5740f77a656cbc4e09fd17ddbbd9a90",
+      "control/imagej-objects.csv": "ab727921fa65bc0721b563f4ca318cd7ffcdd49f547ad0ba2e3b7ecb63a73fe4",
+      "control/fiber-areas.csv": "0ac0eb0239a355c42bd7903582479be63d98f219be30b3f8ef4c0ef7bef36370",
+      "control/fiber-muscle-summary.csv": "db856d2fd0b54ceacf6b4bf7a0c33ec65540eafa23feaa0ce1232b47cb29cd42",
+      "control/gfp-fields.csv": "75e05e60d51cb5bae917a3a3d75a6ab08a8a89b1e04b7a2cfa4b1ba37076a1ac",
+      "control/gfp-sections.csv": "438e4794100b85dfef8cd9beb977ffc267b391cf79828965bf7f884f9a211107",
+      "control/gfp-muscle-max.csv": "179b4dc75901d83782541cd4c7b9cfb0b09ea9c334f8215b9bc1498c6a777137",
+      "corrected-retry/run-report.json": "0ae6dce7a14f9b28e223b7c69af6588cfabf9826d4003712c92f3c64840a13be"
+    }
+  },
+  "linux_status": "Untested; pinned Linux-x86_64 install recipe provided for separate manager execution",
+  "checks_stopped_after_pass": true,
+  "independent_review": "Pending manager-arranged review before integration"
+}

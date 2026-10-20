@@ -1,0 +1,213 @@
+{
+  "revision": "manager-requested round1 delta; prior approved local evidence preserved separately",
+  "prior_review_reference": "d91b1269",
+  "prior_approved_commit": "d0d39d2bde7c8bc77af3fb51eb7a25064d701378",
+  "prior_verification_file": "VERIFICATION.json",
+  "prior_verification_sha256": "fe84428f07b1545364e87be624a4df81113dcf32ba5840f0ee7458a775871bf3",
+  "command": "python3 tutorial.py suite --out runs/local-round1",
+  "suite_invocations_for_this_revision": 1,
+  "tested_commit": "caf9550be43bfeca81ab828df17fdc1e08af0d60",
+  "package_git_status_at_test": "",
+  "package_dirty_at_test": false,
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "runtime-lock.json": "e3264167ad7fda2fe4cff1c528c6b321b276e5358f45919b6175943a8c2466fb",
+    "ImageJMeasure.java": "ad3a8e8eecc013409bd4214adb60860ff519f23640b84afc3131ac5fa277c0f2",
+    "tutorial.py": "a0d09b84f498dde7d1479a105593f2806b02327e8e9de2d750017669f33bdfce",
+    "README.md": "5ae66465b8aa038c0c5c085504bc4faaf8481288139b1b8a87073a23dd12513c",
+    "AGENT_PROMPT.md": "74681b346fb811539cb8a60ca723e0fe2d90a80ced58595c0bfcbd7b6fa2b32d"
+  },
+  "status": "pass",
+  "cases_passed": 36,
+  "cases_total": 36,
+  "elapsed_seconds": 19.977814167010365,
+  "timing_scope": "Single affected suite, including cached-archive JDK extraction/compilation, planted cases, corrected retry and actual copied-package measurement; no artifact downloads",
+  "runtime": {
+    "platform": "Darwin-arm64",
+    "python": "3.14.7",
+    "java": "openjdk 21.0.8 2025-07-15 LTS\nOpenJDK Runtime Environment Temurin-21.0.8+9 (build 21.0.8+9-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.8+9 (build 21.0.8+9-LTS, mixed mode, sharing)",
+    "java_binary_sha256": "0045ae168ee132bbf469a26fb17dac6d1dee431c9b7826474f3b6ee574a997c9",
+    "class_sha256": "3c5aa018275a72b49765419b3dc2654ba53c575f8065dcd199c3d9b54559f8a1",
+    "headless": true
+  },
+  "imagej_version": "1.54p",
+  "artifact_pins": "runtime-lock.json (unchanged)",
+  "runtime_migration": "Prior markerless task-local JDK preserved in ignored .runtime/prior-approved-jdk-21.0.8+9 before this run; cached verified archive re-extracted atomically",
+  "original_inputs_unchanged": true,
+  "corrected_calibration_retry_restored_original_hashes": true,
+  "baseline_observed": {
+    "fiber_masks": 18,
+    "gfp_fields": 12,
+    "sample_mean_um2": {
+      "A1/TA": 4.4,
+      "A1/GA": 11.0,
+      "A2/TA": 5.5
+    },
+    "gfp_section_counts": {
+      "A1/TA": [
+        3,
+        5
+      ],
+      "A1/GA": [
+        1,
+        4
+      ],
+      "A2/TA": [
+        3,
+        1
+      ]
+    },
+    "gfp_muscle_maxima": {
+      "A1/TA": 5,
+      "A1/GA": 4,
+      "A2/TA": 3
+    }
+  },
+  "independent_new_invariants": {
+    "ring_hole": {
+      "geometry": "5x5 foreground rectangle with enclosed 3x3 background",
+      "foreground_pixels": 16,
+      "enclosed_background_pixels": 9,
+      "expected_result": "reject",
+      "observed_specific_imagej_error": "Mask contains enclosed holes; supply filled reviewed regions"
+    },
+    "edge_touching": {
+      "geometry": "3x2 rectangle at x=0,y=0",
+      "expected_objects_per_mask": 1,
+      "expected_pixels_per_mask": 6,
+      "expected_area_um2": 2.4
+    },
+    "diagonal_touching": {
+      "geometry": "2x2 squares at (2,2) and (4,4), corner contact only",
+      "expected_8_connected_objects_per_mask": 1,
+      "expected_pixels_per_mask": 8,
+      "expected_area_um2": 3.2,
+      "limit": "This connected-object count cannot identify two touching biological GFP cells"
+    },
+    "nonbinary_mask": {
+      "required_actual_imagej_log_error": "Mask must contain only 0 and 255"
+    },
+    "symlinks": "File (dangling), directory and root links refused before input hashing/output creation",
+    "duplicate_ids": "Duplicate registered field and fiber identities refused",
+    "runtime_recovery": "Both planted bin/java+bin/javac without completion marker and interrupted staging refused; after removing only planted disposable test trees, real cached-archive extraction and measurement passed"
+  },
+  "observed_topology_objects": {
+    "edge_touching": [
+      {
+        "endpoint": "fiber",
+        "mask": "masks/SYN-A1-TA-S1-HF-R1.png",
+        "object_index": 1,
+        "area_um2": 2.4000000000000004
+      },
+      {
+        "endpoint": "gfp",
+        "mask": "masks/SYN-A1-TA-S1-GF1.png",
+        "object_index": 1,
+        "area_um2": 2.4000000000000004
+      }
+    ],
+    "diagonal_touching": [
+      {
+        "endpoint": "fiber",
+        "mask": "masks/SYN-A1-TA-S1-HF-R1.png",
+        "object_index": 1,
+        "area_um2": 3.2
+      },
+      {
+        "endpoint": "gfp",
+        "mask": "masks/SYN-A1-TA-S1-GF1.png",
+        "object_index": 1,
+        "area_um2": 3.2
+      }
+    ]
+  },
+  "copied_package": {
+    "tested_commit": null,
+    "package_git_status": null,
+    "package_dirty": null,
+    "package_origin": "copied_package_no_git_metadata",
+    "source_sha256": {
+      ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+      "runtime-lock.json": "e3264167ad7fda2fe4cff1c528c6b321b276e5358f45919b6175943a8c2466fb",
+      "ImageJMeasure.java": "ad3a8e8eecc013409bd4214adb60860ff519f23640b84afc3131ac5fa277c0f2",
+      "tutorial.py": "a0d09b84f498dde7d1479a105593f2806b02327e8e9de2d750017669f33bdfce",
+      "README.md": "5ae66465b8aa038c0c5c085504bc4faaf8481288139b1b8a87073a23dd12513c",
+      "AGENT_PROMPT.md": "74681b346fb811539cb8a60ca723e0fe2d90a80ced58595c0bfcbd7b6fa2b32d"
+    }
+  },
+  "copied_package_outside_checkout": true,
+  "copied_package_inputs_unchanged": true,
+  "copied_package_original_area_count_aggregation_truth_passed": true,
+  "copied_package_completion_marker": {
+    "archive_sha256": "59422c2292ae4e76b87e00d8808dbe49cffa39af731e08bb0292ddb0af4e0261",
+    "java_home": "jdk-21.0.8+9/Contents/Home"
+  },
+  "passed_case_names": [
+    "control",
+    "independent_synthetic_truth",
+    "missing_calibration",
+    "nonfinite_calibration",
+    "infinite_calibration",
+    "zero_calibration",
+    "negative_calibration",
+    "overflow_calibration",
+    "invalid_identifier",
+    "changed_identifier",
+    "duplicate_field_id",
+    "duplicate_fiber_id",
+    "changed_hierarchy",
+    "unreviewed",
+    "invalid_dimensions",
+    "invalid_sample",
+    "nonbinary_mask",
+    "ring_hole",
+    "disconnected_fiber",
+    "empty_fiber",
+    "edge_touching",
+    "edge_touching_independent_truth",
+    "diagonal_touching",
+    "diagonal_touching_independent_truth",
+    "symlink_file",
+    "symlink_directory",
+    "symlink_root",
+    "changed_hash",
+    "output_reuse",
+    "input_overlap",
+    "input_ancestor_overlap",
+    "corrected_retry",
+    "incomplete_jdk_refusal",
+    "interrupted_extraction_refusal",
+    "copied_package_measure_retry",
+    "copied_package_truth_and_null_git_provenance"
+  ],
+  "local_ignored_evidence": {
+    "directory": "runs/local-round1",
+    "sha256": {
+      "suite-report.json": "180c18d3e817589e402b5e90dbd055624aa568af6264a0fc9bae79b5cda7b7a1",
+      "suite-output-manifest.json": "b1da84a42938c05702a0ba85b2c2ed37274f89d63613417fc3c85219c274f4f7",
+      "original-input-hashes.json": "e5c2f3a6b1ec950d8ab377881e483b454eb384b01ff85bcd3857bd83652d7b86",
+      "control/run-report.json": "85996d1fc3efde79a532bd661a33d10e3a52e971e5defc40d53c64493de93ee3",
+      "control/imagej-objects.csv": "ab727921fa65bc0721b563f4ca318cd7ffcdd49f547ad0ba2e3b7ecb63a73fe4",
+      "control/fiber-muscle-summary.csv": "db856d2fd0b54ceacf6b4bf7a0c33ec65540eafa23feaa0ce1232b47cb29cd42",
+      "control/gfp-sections.csv": "438e4794100b85dfef8cd9beb977ffc267b391cf79828965bf7f884f9a211107",
+      "control/gfp-muscle-max.csv": "179b4dc75901d83782541cd4c7b9cfb0b09ea9c334f8215b9bc1498c6a777137",
+      "rejected-nonbinary_mask/imagej.log": "ba27365d38b45b633805cc3f4ab640acd393f88ba148a736b3701f1fd3951945",
+      "rejected-ring_hole/imagej.log": "b4318d8a2a78425bb3ebd192a702e6152066d8601227552f89f487b7eff2fd6f",
+      "edge_touching/imagej-objects.csv": "a28ef572d13c0c315d95ee4914ae1f58c033ca3069ea6c5d1aeb1b9d6e6f4998",
+      "diagonal_touching/imagej-objects.csv": "4ac6818b1ace22d62d4700e0be18def9a88dba8e5b989a49d4e566ab66ae56c4",
+      "symlink_file.log": "f289cff233937d1016b8b862bfc25b4d2e6ed823037e61c1168dfcfc38e3552f",
+      "symlink_directory.log": "f289cff233937d1016b8b862bfc25b4d2e6ed823037e61c1168dfcfc38e3552f",
+      "symlink_root.log": "f289cff233937d1016b8b862bfc25b4d2e6ed823037e61c1168dfcfc38e3552f",
+      "incomplete_jdk_refusal.log": "7e056b6a7993b383e1d6eac29a1ce1120cf247da1beafd24778d14ba76f67acb",
+      "interrupted_extraction_refusal.log": "9bc033e0aee020211adfc98217ef39b1881b051bcfcae6b5064d038d17c91ba5",
+      "corrected-retry/run-report.json": "2e346ebf50f9f5d41f7b025eb32a19109687392670fda9e014b43b22c60bb641",
+      "copied-package-measurement/run-report.json": "e14f3f21912d55ca8ef7e848d335cb1a10099b42f0c54db40eb2538bc95abe62",
+      "copied-package-measurement/imagej-objects.csv": "ab727921fa65bc0721b563f4ca318cd7ffcdd49f547ad0ba2e3b7ecb63a73fe4"
+    }
+  },
+  "linux_status": "Untested; manager execution pending",
+  "scope_limits": "Filled reviewed-region mechanics only; no automated H&E segmentation, marker/central-nuclei inference, real-image detection, human review, GUI or biological agreement validated",
+  "stopped_after_single_pass": true,
+  "excluded_checks": "No app/core/Myotally suites or SSH",
+  "independent_delta_review": "Pending manager request to same reviewer before installed/Linux use"
+}

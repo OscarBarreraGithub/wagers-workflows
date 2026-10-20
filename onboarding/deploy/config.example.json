@@ -1,0 +1,6 @@
+{
+  "release_prefix": "REQUIRED_ABSOLUTE_FINAL_RELEASE_PREFIX",
+  "module_root": "REQUIRED_ABSOLUTE_MODULE_ROOT",
+  "module_name": "wagers-myotally/1.0.2-env001",
+  "python_module": "python"
+}

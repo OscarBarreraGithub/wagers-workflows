@@ -1,0 +1,45 @@
+{
+  "implementation": "CPython",
+  "installed_artifact_hashes": {
+    "joblib": {
+      "file_count": 145,
+      "files_sha256": "39540fceaa4048c8699981fb56b3ba39f5b12fc2dd4696debe1ae6ea6a9cf863"
+    },
+    "numpy": {
+      "file_count": 877,
+      "files_sha256": "1bca463d637424b069319493b1c52cc29c7d22a03ab9be641d75fd7915a8c002"
+    },
+    "pip": {
+      "file_count": 443,
+      "files_sha256": "5bdac98147a8a26690f027cd241567aedae66eb8db8a046c6c790a809c4bc18a"
+    },
+    "scikit-learn": {
+      "file_count": 896,
+      "files_sha256": "ce34b9c4581bb992f28c44bc3d934f4d18133364bf78afa48ee8579160f93e12"
+    },
+    "scipy": {
+      "file_count": 1424,
+      "files_sha256": "66e433f3fd8bc2c57e9abdb60a37532cf76f530891d844926d3ce96e4b9bfaf9"
+    },
+    "threadpoolctl": {
+      "file_count": 7,
+      "files_sha256": "45eb73e5f1a659bd632e845c9d23538f5acd569eb40a429da1fbb36cb4f9c4ff"
+    }
+  },
+  "machine": "arm64",
+  "packages": {
+    "joblib": "1.4.2",
+    "numpy": "2.2.6",
+    "pip": "25.0.1",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "pip_freeze": "joblib==1.4.2\nnumpy==2.2.6\npip==25.0.1\nscikit-learn==1.6.1\nscipy==1.15.3\nthreadpoolctl==3.6.0\n",
+  "pip_freeze_sha256": "1bb474cae59eab334a9e5d8fc5468670033645d878de7937086a833079c022a9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.12.12",
+  "python_executable_sha256": "51041dcef59a872d4e411dfd26f6264f70bd67294bebbe52a707490726f0d1a6",
+  "sklearn_gpr_source_sha256": "652d377d21acb03cbb055cebf6e57919f73293cc711edfdb7f6b2daac6f6f75a",
+  "sklearn_version": "1.6.1"
+}

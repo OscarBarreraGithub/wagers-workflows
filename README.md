@@ -1,0 +1,53 @@
+# Wagers workflows
+
+Clone the [public repository](https://github.com/OscarBarreraGithub/wagers-workflows)
+and read [HANDOFF.md](HANDOFF.md):
+
+```sh
+git clone https://github.com/OscarBarreraGithub/wagers-workflows.git
+cd wagers-workflows
+```
+
+## Copy to your setup agent
+
+> Clone https://github.com/OscarBarreraGithub/wagers-workflows and read
+> HANDOFF.md plus onboarding/deploy/install/README.md. Set this up on my
+> authorized cluster so I can module load it. Inspect Linux x86_64, site
+> Python/Mamba/Singularity prerequisites and authorized account/storage. Reuse an
+> accessible verified existing module when appropriate; otherwise configure and
+> run pinned installer into new final install/module paths in allocated compute.
+> Run documented verification for the new installation and give me exact module
+> use/load commands and a concise result. Ask only missing access/site/storage
+> decisions; don't guess accounts/ACLs, run compute on login nodes, or
+> reinstall/retest an already verified owner setup.
+
+See [setup details and site prerequisites](HANDOFF.md#copy-to-your-setup-agent).
+Cold portability job `54148277` is unverified/pending; actual site prerequisites
+and intended-user access must be established. It does not gate reuse of the
+existing verified owner setup when accessible.
+
+Reuse the **existing owner-hosted cluster module** for the immediate synthetic
+demo when accessible. In an allocated CPU session, use the exact module root
+from the owner's separately supplied private command card:
+
+```sh
+module use "/absolute/root/from-private-command-card"
+module load wagers-tools/2026.10-env001
+wagers-doctor --json
+```
+
+Module loading does not allocate compute or grant access. Amy's access is
+unverified; the module file is currently owner-readable only. GitHub signup is
+not required to read or clone this public source. The separate fresh installer
+is for maintainers when a rebuild is needed; its pending portability test does
+not gate a demo using the existing accessible installation.
+
+Five synthetic tutorials exercise analysis and review mechanics. Use the
+[workflow chooser](onboarding/README.md), then the
+[five commands and agent task guides](onboarding/docs/tutorials.md).
+These exercises do not establish biological accuracy.
+
+[Current verification](onboarding/docs/current-verification.md) records historical
+Linux/module passes separately from the **pending fresh cold installation**.
+This documentation handoff does not close runtime verification or establish
+Amy's access, Excel compatibility or real-study acceptance.

@@ -1,0 +1,11 @@
+name: wagers-myotally-1.0.2-env001
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.14
+  - numpy=1.24.4
+  - scipy=1.10.1
+  - pillow=10.0.1
+  - opencv=4.8.1
+  - tk=8.6

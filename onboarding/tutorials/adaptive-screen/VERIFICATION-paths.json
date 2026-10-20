@@ -1,0 +1,56 @@
+{
+  "actual_path_check_runs": 1,
+  "command": ".runtime/bin/python -B runs/check_shared_paths.py",
+  "contract": [
+    "All CLI input/state/outcome/output paths explicit; absolute writable user directories outside package/runtime accepted; missing parents created.",
+    "Read-only copied software executed from unrelated cwd with user paths containing spaces; generated, initialized, proposed4, simulated and imported4 successfully.",
+    "Source tree protected; only ignored package-local runs/ subtree allowed for writable-checkout development.",
+    "Active/base Python runtime and every prior snapshot protected against nested outputs.",
+    "Existing outputs and prior input-chain overlap protections retained; all user records and previous full-suite evidence unchanged after refusals.",
+    "Relative parent references require referenced snapshots remain accessible; per-user ledgers do not coordinate global shared experiments."
+  ],
+  "deployment": "NOT_RUN",
+  "failed": 0,
+  "full_suite_rerun": false,
+  "independent_review": "PENDING; manager-owned",
+  "launch_note": "An initial launcher used the package-relative helper path from the package cwd and exited2 before executing any test. Helper was moved to intended ignored runs/ path; then the one actual focused run passed.",
+  "linux": "NOT_RUN; manager-owned",
+  "passed": 24,
+  "prior_full_suite": {
+    "commit": "590c6471591e32e3f6bb3eaeb25589db34580e9a",
+    "failed": 0,
+    "note": "Original source checkpoint, not a full statistical-suite run of the path delta. Prior evidence retained unchanged; original matmul warning caveat remains unresolved.",
+    "passed": 96,
+    "status": "PASS"
+  },
+  "python_executable_sha256": "51041dcef59a872d4e411dfd26f6264f70bd67294bebbe52a707490726f0d1a6",
+  "retained_ignored_report": {
+    "path": "runs/shared-paths-01/path-check-report.json",
+    "sha256": "41c2727403f6386959df8ffe794df3cc445937e0c25b4191b037a1a568c71004"
+  },
+  "runtime_note": "Same isolated pinned runtime as original96check suite; Python3.12.12 executable hash unchanged; -B/PYTHONDONTWRITEBYTECODE used.",
+  "sanitized_evidence": {
+    "evidence/shared-path-check.py": "94f9e13209057707c20f1cad0e48194edbae881ec9a7003cda6a7d38e3948cff",
+    "evidence/shared-path-report.json": "fb79c9194f0da793575121a0cd95ff3fd48882b3df064e380288fc34e7a6d378"
+  },
+  "scope": "Focused user-output path integration delta only",
+  "source_delta": [
+    "contract.py: central output guard protects package source/runtime and prior snapshot ancestry",
+    "README.md: shared read-only software / separate user directory examples and exact contract"
+  ],
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_PROMPT.md": "785dde5b0de3c6f9e2d22969c32ec5b4e66d58403061e3e4f28841def39fbd7e",
+    "README.md": "db89d04c5bb50e25cfae90812d3d22fcf41276812af9986cc1ee1b76daaed1c2",
+    "contract.py": "4c944df5cd6cdab93874a238ff199821f6bdf385f66814dcc020112984821ee6",
+    "proposer.py": "c165c41b405cf8f79b94373ca23d51c405628eb8e93467f00328b12d84247bfe",
+    "requirements.txt": "c7f6b632c4c42609ad1e3f7c9942f31674e179439572f5a00dc077716b6ab836",
+    "simulator.py": "7e58430841a940835bd1d8a774b228b1eca2aa08d61c9b178779d26341f9ff30",
+    "suite.py": "03afdfb66c3bd13689f7072ec2c4c3b75f06f51617b2d3ba8b5ed5a279f2d64a",
+    "tutorial.py": "bd5ad95d47238e64653a6eb14ee953e0503606088b4eeb69eae9023a09963b1e"
+  },
+  "status": "PASS",
+  "tested_commit": "8a5ff21728c63066388402954861549eb405d623",
+  "tested_git_status": "",
+  "working_directory": "onboarding/tutorials/adaptive-screen"
+}

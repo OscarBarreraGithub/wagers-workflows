@@ -1,0 +1,292 @@
+{
+  "checks": [
+    {
+      "name": "generate_to_new_absolute_user_dir",
+      "status": "PASS"
+    },
+    {
+      "name": "init_to_separate_user_state_dir",
+      "status": "PASS"
+    },
+    {
+      "name": "propose_from_readonly_software",
+      "status": "PASS"
+    },
+    {
+      "name": "simulate_to_separate_measurement_dir",
+      "status": "PASS"
+    },
+    {
+      "name": "import_to_new_user_snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "source_destination_initially_absent",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_output_under_source",
+      "status": "PASS"
+    },
+    {
+      "name": "source_refusal_has_no_output",
+      "status": "PASS"
+    },
+    {
+      "name": "active_runtime_destination_initially_absent",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_output_under_active_runtime",
+      "status": "PASS"
+    },
+    {
+      "name": "active_runtime_refusal_has_no_output",
+      "status": "PASS"
+    },
+    {
+      "name": "base_runtime_destination_initially_absent",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_output_under_base_runtime",
+      "status": "PASS"
+    },
+    {
+      "name": "base_runtime_refusal_has_no_output",
+      "status": "PASS"
+    },
+    {
+      "name": "prior_snapshot_destination_initially_absent",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_output_under_prior_snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "prior_snapshot_refusal_has_no_output",
+      "status": "PASS"
+    },
+    {
+      "name": "reject_repeated_import",
+      "status": "PASS"
+    },
+    {
+      "name": "refusals_preserve_all_user_records",
+      "status": "PASS"
+    },
+    {
+      "name": "external_suite_destination_guard_accepts",
+      "status": "PASS"
+    },
+    {
+      "name": "user_fit_imported_four_outcomes",
+      "status": "PASS"
+    },
+    {
+      "name": "readonly_source_tree_unchanged_no_bytecode",
+      "status": "PASS"
+    },
+    {
+      "name": "original_full_suite_evidence_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "source_bytes_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "generate",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/sim"
+      ],
+      "name": "generate_to_new_absolute_user_dir",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"command\": \"generate\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "init",
+        "--candidates",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/sim/candidates.csv",
+        "--outcomes",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/sim/initial-outcomes.csv",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v000"
+      ],
+      "name": "init_to_separate_user_state_dir",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"command\": \"init\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "propose",
+        "--state",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v000",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v001"
+      ],
+      "name": "propose_from_readonly_software",
+      "returncode": 0,
+      "stderr": "${PACKAGE}/.runtime/lib/python3.12/site-packages/sklearn/gaussian_process/_gpr.py:441: RuntimeWarning: divide by zero encountered in matmul\n  y_mean = K_trans @ self.alpha_\n${PACKAGE}/.runtime/lib/python3.12/site-packages/sklearn/gaussian_process/_gpr.py:441: RuntimeWarning: overflow encountered in matmul\n  y_mean = K_trans @ self.alpha_\n${PACKAGE}/.runtime/lib/python3.12/site-packages/sklearn/gaussian_process/_gpr.py:441: RuntimeWarning: invalid value encountered in matmul\n  y_mean = K_trans @ self.alpha_\n",
+      "stdout": "{\"status\": \"PASS\", \"command\": \"propose\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "simulate",
+        "--state",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v001",
+        "--truth",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/sim/truth.csv",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/measurements/round1"
+      ],
+      "name": "simulate_to_separate_measurement_dir",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"command\": \"simulate\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "import",
+        "--state",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v001",
+        "--outcomes",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/measurements/round1/outcomes.csv",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v002"
+      ],
+      "name": "import_to_new_user_snapshot",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"PASS\", \"command\": \"import\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "generate",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/forbidden-output"
+      ],
+      "name": "reject_output_under_source",
+      "returncode": 2,
+      "stderr": "",
+      "stdout": "{\"status\": \"FAIL\", \"command\": \"generate\", \"error\": \"Output is inside protected package source; use a user directory or local runs/\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "generate",
+        "--out",
+        "${PACKAGE}/.runtime/adaptive-forbidden-output"
+      ],
+      "name": "reject_output_under_active_runtime",
+      "returncode": 2,
+      "stderr": "",
+      "stdout": "{\"status\": \"FAIL\", \"command\": \"generate\", \"error\": \"Output is inside protected Python runtime\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "generate",
+        "--out",
+        "${HOMEBREW}/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/adaptive-forbidden-output"
+      ],
+      "name": "reject_output_under_base_runtime",
+      "returncode": 2,
+      "stderr": "",
+      "stdout": "{\"status\": \"FAIL\", \"command\": \"generate\", \"error\": \"Output is inside protected Python runtime\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "generate",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/sim/nested-output"
+      ],
+      "name": "reject_output_under_prior_snapshot",
+      "returncode": 2,
+      "stderr": "",
+      "stdout": "{\"status\": \"FAIL\", \"command\": \"generate\", \"error\": \"Output is nested inside a prior snapshot\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "${PACKAGE}/runs/shared-paths-01/shared-readonly/tutorial.py",
+        "import",
+        "--state",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/v002",
+        "--outcomes",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/measurements/round1/outcomes.csv",
+        "--out",
+        "${PACKAGE}/runs/shared-paths-01/users/amy own work/state/refused"
+      ],
+      "name": "reject_repeated_import",
+      "returncode": 2,
+      "stderr": "",
+      "stdout": "{\"status\": \"FAIL\", \"command\": \"import\", \"error\": \"No pending batch; already measured/repeated import\"}\n"
+    },
+    {
+      "argv": [
+        "${PACKAGE}/.runtime/bin/python",
+        "-B",
+        "-c",
+        "import contract; from pathlib import Path; out=contract.ensure_output('${PACKAGE}/runs/shared-paths-01/users/amy own work/evidence/fresh-suite', [Path(contract.__file__)]); print(out)"
+      ],
+      "name": "external_suite_destination_guard_only",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "${PACKAGE}/runs/shared-paths-01/users/amy own work/evidence/fresh-suite\n"
+    }
+  ],
+  "deployment": "NOT_RUN",
+  "failed": 0,
+  "full_suite_rerun": false,
+  "git_status_before": "",
+  "passed": 24,
+  "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "python_executable_sha256": "51041dcef59a872d4e411dfd26f6264f70bd67294bebbe52a707490726f0d1a6",
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_PROMPT.md": "785dde5b0de3c6f9e2d22969c32ec5b4e66d58403061e3e4f28841def39fbd7e",
+    "README.md": "db89d04c5bb50e25cfae90812d3d22fcf41276812af9986cc1ee1b76daaed1c2",
+    "contract.py": "4c944df5cd6cdab93874a238ff199821f6bdf385f66814dcc020112984821ee6",
+    "proposer.py": "c165c41b405cf8f79b94373ca23d51c405628eb8e93467f00328b12d84247bfe",
+    "requirements.txt": "c7f6b632c4c42609ad1e3f7c9942f31674e179439572f5a00dc077716b6ab836",
+    "simulator.py": "7e58430841a940835bd1d8a774b228b1eca2aa08d61c9b178779d26341f9ff30",
+    "suite.py": "03afdfb66c3bd13689f7072ec2c4c3b75f06f51617b2d3ba8b5ed5a279f2d64a",
+    "tutorial.py": "bd5ad95d47238e64653a6eb14ee953e0503606088b4eeb69eae9023a09963b1e"
+  },
+  "status": "PASS",
+  "tested_commit": "8a5ff21728c63066388402954861549eb405d623"
+}

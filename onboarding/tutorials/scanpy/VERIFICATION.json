@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "observed_utc": "2026-10-19T10:10:15.509370+00:00",
+  "tested_commit": "44941334a268549d89b765ae5159e01a1fd91ac2",
+  "package_git_status_at_execution": "",
+  "platform": "macOS arm64; local task-owned venv; Python 3.12.12",
+  "suite_command": ".runtime/bin/python tutorial.py --output runs/local-verified",
+  "suite_exit_code": 0,
+  "suite_executions": 1,
+  "cases_passed": 28,
+  "cases_total": 28,
+  "checks": {
+    "invalid_inputs": "PASS",
+    "failure_report": "PASS",
+    "corrected_retry": "PASS",
+    "independent_arithmetic": "PASS",
+    "path_safety": "PASS",
+    "unchanged_inputs": "PASS"
+  },
+  "elapsed_seconds": 34.841,
+  "runtime": {
+    "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "installer_pip": "26.0",
+    "versions": {
+      "anndata": "0.13.4",
+      "annotated-types": "0.8.0",
+      "array-api-compat": "1.15.0",
+      "certifi": "2026.10.18",
+      "cloudpickle": "3.1.2",
+      "contourpy": "1.4.0",
+      "cycler": "0.12.1",
+      "donfig": "0.8.1.post1",
+      "fast-array-utils": "1.5.1",
+      "fonttools": "4.67.0",
+      "formulaic": "1.2.2",
+      "google-crc32c": "1.9.0",
+      "h5py": "3.16.0",
+      "interface_meta": "2.0.1",
+      "joblib": "1.6.0",
+      "kiwisolver": "1.5.1",
+      "legacy-api-wrap": "1.5",
+      "llvmlite": "0.50.0",
+      "matplotlib": "3.11.2",
+      "msgspec": "0.22.0",
+      "narwhals": "2.27.1",
+      "natsort": "8.4.0",
+      "networkx": "3.7",
+      "numba": "0.68.0",
+      "numcodecs": "0.17.0",
+      "numpy": "2.5.4",
+      "packaging": "26.3",
+      "pandas": "3.0.6",
+      "patsy": "1.0.3",
+      "pillow": "13.0.0",
+      "pydantic": "2.14.1",
+      "pydantic-settings": "2.16.0",
+      "pydantic_core": "2.50.1",
+      "pynndescent": "0.6.0",
+      "pyparsing": "3.3.3",
+      "python-dateutil": "2.9.0.post0",
+      "python-dotenv": "1.2.4",
+      "PyYAML": "6.0.3",
+      "scanpy": "1.12.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "scverse-misc": "0.1.7",
+      "seaborn": "0.13.2",
+      "session-info2": "0.4.2",
+      "six": "1.17.0",
+      "statsmodels": "0.15.0",
+      "threadpoolctl": "3.7.0",
+      "tqdm": "4.70.1",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "umap-learn": "0.5.12",
+      "wrapt": "2.5.1",
+      "zarr": "3.4.1"
+    },
+    "install_report_sha256": "c23961b1c0694979328073d4ee2a3dea48e56effc4f55a3014d5f133d9509539"
+  },
+  "code_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_TASK.md": "296e6ab568ffe0bf08ee81be7e64e20a362cf9495a1e512d6570a3dc1639bedf",
+    "README.md": "77055ccf13804f8cd59a465676e80de0c9ea3ed428faddefe54342881f63af2e",
+    "artifacts.json": "7f1a4fc6f8c0b171da0a1aafd9dba8cbbdbbc812b18978774e41083392c48e13",
+    "fixture.json": "d6f41f4ffb01d54e7e06e6e7a321d01dc0d600e93ffed58573a42c574e8b7fc0",
+    "requirements.lock": "ce11fe9b01bc6fcac1b5ee51f53486fe84073003fa751995f1fa7cb43af7ba7c",
+    "setup_runtime.py": "4e0da735f777aa3d411bd9f7446431ab42661dcdf49ad2f08a2fd97cd1f57ae7",
+    "truth.json": "e344fb65721b4feeda21865455912089075489a4cd6d48f2d6baaaee386bdb54",
+    "tutorial.py": "22508346285227e7b971a739c7bd10cd086d18911ff09982558437540f2f4d3f",
+    "workflow.py": "039165c2c995949b71a40409242f4b3052b0e0236e9d200dea08942ea8b84e6b"
+  },
+  "code_hashes_unchanged": true,
+  "inputs_unchanged": true,
+  "original_fixture_sha256": "d6f41f4ffb01d54e7e06e6e7a321d01dc0d600e93ffed58573a42c574e8b7fc0",
+  "input_variants": 21,
+  "expected_failure_observed": {
+    "case": "ambiguous-assignment",
+    "status": "FAIL",
+    "stages": {
+      "validate": "FAIL",
+      "qc": "NOT_RUN",
+      "filter": "NOT_RUN",
+      "normalize_log": "NOT_RUN",
+      "aggregate": "NOT_RUN",
+      "roundtrip": "NOT_RUN"
+    },
+    "retry": "corrected-retry with original valid fixture in a fresh directory"
+  },
+  "observed": {
+    "input_cells": 12,
+    "retained_cells": 8,
+    "donors": 2,
+    "samples": 4,
+    "qc_totals": [
+      8,
+      8,
+      4,
+      10,
+      10,
+      1,
+      10,
+      10,
+      0,
+      10,
+      12,
+      8
+    ],
+    "pseudobulk": {
+      "S1C": [
+        6,
+        6,
+        4,
+        0
+      ],
+      "S1Q": [
+        14,
+        4,
+        2,
+        0
+      ],
+      "S2C": [
+        8,
+        4,
+        8,
+        0
+      ],
+      "S2Q": [
+        16,
+        2,
+        4,
+        0
+      ]
+    },
+    "normalization_target": 100,
+    "arithmetic_tolerance": 1e-12,
+    "raw_integer_counts_and_all_identities_roundtrip": true
+  },
+  "private_evidence_root": "runs/local-verified/",
+  "evidence_sha256": {
+    "suite-report.json": "0e0ca9aceaeaf5711b7d9c05f1ac2112d8a3752119d0a1cabd9149a998f0d0d5",
+    "ambiguous-assignment/report.json": "81522895dd5b778cf7caa6eedd307151e1740ac6b709568684b5d39fff056c04",
+    "corrected-retry/report.json": "0250fcde9101cc68c9271f36552a7de41adf4557d6cd0584a8d7711ae79d0508",
+    "corrected-retry/qc.json": "d20378204824be46057abba5b2c81ec708c559cbed3b7c3cacbcfd7e3300103b",
+    "corrected-retry/pseudobulk.json": "e9adba371d471b8059e61173a375e9d1629b9bdd7871e3e5d598d1cedbc15695",
+    "corrected-retry/readout.h5ad": "a0947c2a5ebd46f94f0e871567d42aab798a838569951f834448bbae6b142d0c",
+    "corrected-retry/pseudobulk.h5ad": "46b1a79e85d93365306a0ee8a0498e3876fb244c3d35806c70d722ae38e4a8f1",
+    "logs/corrected-retry.log": "8139cdab7d34ff76dccbdb3e6b77ea6edd4312bfeb215a6db97734ef8fbb5def",
+    "logs/no-output-reuse.log": "ea139ab9969a2b3abd9a66e00865b8c3f22359bdf6821f2350c2e245466d9156",
+    "logs/input-overlap.log": "5320758a9e16eff2aadd5bd8384a30f36221326868eecd8b4f15a5682419e7f0",
+    "logs/ancestor-symlink.log": "1c1bb0dcbc7381cde37693b8aab341e993c050704e33ebb6c8d996eac78d90e5"
+  },
+  "private_runtime_evidence_sha256": {
+    "execution-record.json": "96d2dba9a09ec5c52a298d93e30e4f73b736e2e42d02edca2e019ec2226ed253",
+    "install-report.json": "c23961b1c0694979328073d4ee2a3dea48e56effc4f55a3014d5f133d9509539",
+    "install.log": "28624decbc7fcf7d1b2c00818a876e2c6ead6610d93be79625958646709dd0cd",
+    "suite-console.log": "1545e6b0d0a0889e07a1bb84001f12b4da32a696c3fc0db1988074af6aef4f1f"
+  },
+  "setup_evidence": "Fresh Python3.12.12 venv created manually with stdlib venv. pip26.0 binary-only install of exact Scanpy1.12.4/AnnData0.13.4; 53 resolved dependencies locked before suite; pip check had no broken requirements. setup_runtime.py is provided for fresh copies; it was inspected/compiled, not separately executed here.",
+  "primary_metadata_verified": {
+    "date": "2026-10-19",
+    "scanpy": {
+      "version": "1.12.4",
+      "requires_python": ">=3.12",
+      "source": "https://pypi.org/pypi/scanpy/1.12.4/json"
+    },
+    "anndata": {
+      "version": "0.13.4",
+      "requires_python": ">=3.12",
+      "source": "https://pypi.org/pypi/anndata/0.13.4/json"
+    }
+  },
+  "stop_condition": "One passing focused package suite; no further tests run. Only this summary added after tested checkpoint.",
+  "pending": [
+    "Independent code review (manager owned)",
+    "Fresh-copy setup_runtime.py execution and Linux installed example (manager owned)",
+    "Real-data/scientific validation outside synthetic tutorial scope"
+  ],
+  "limitations": "Planted deterministic mechanics only. Two matched donor units; cells are not independent donor replicates. No DE, causal or stem-cell-function result.",
+  "documentation_revision": {
+    "revision": 1,
+    "review": "0c5e533a-d9e2-4a95-9c8f-2856efbe7050",
+    "base_candidate": "3c3a10f4dc0d05aa2fafd1e88a8dcc2f0d231a89",
+    "recorded_utc": "2026-10-19T10:23:33.325462+00:00",
+    "changed_files": [
+      "README.md",
+      "VERIFICATION.json"
+    ],
+    "description": "Workflow-only example copies fixture into a fresh runs/my-input directory with an && chain that stops if mkdir refuses existing input. Input and output are sibling directories; package-root/ancestor inputs are explicitly refused.",
+    "current_readme_sha256": "df241fc16bb360d26e15f6e7c727b49d867ca6a772b5d47b9f72250d1fb94630",
+    "historical_readme_sha256": "77055ccf13804f8cd59a465676e80de0c9ea3ed428faddefe54342881f63af2e",
+    "execution_evidence_scope": "All pre-existing fields, including tested_commit, code_sha256, code_hashes_unchanged, stop_condition and execution/evidence hashes, describe the historical 4494133 run and are preserved. Only README.md differs among those ten tested source files; the new README has not been execution-tested.",
+    "other_tracked_package_files_unchanged": 9,
+    "validation": {
+      "shell_syntax": "PASS (bash -n only; commands not executed)",
+      "static_path_layout": "PASS (fresh sibling input/output; old package-root input overlaps)",
+      "markdown_layout_and_links": "PASS (two balanced shell fences; five HTTPS targets unchanged)",
+      "historical_fields_and_runtime_evidence": "PASS (preserved historical fields; private runtime evidence hashes unchanged)"
+    },
+    "suite_or_runtime_rerun": "NOT_RUN (docs-only revision; no suite/runtime/setup execution)",
+    "pending": "Manager-owned bounded delta review, fresh-copy setup and installed Linux gate remain open."
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wagers Myotally"
+  short_description: "Calibrated fluorescence runs and muscle summaries"
+  default_prompt: "Use $wagers-myotally to validate my calibrated laminin/DAPI manifest and report each muscle separately with human review still required."

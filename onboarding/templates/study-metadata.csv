@@ -1,0 +1,1 @@
+study_id,animal_id,muscle_id,section_id,field_id,condition_blinded,timepoint,replicate_role,laminin_filename,dapi_filename,mfi_filenames,pixel_size_x_um,pixel_size_y_um,calibration_source,original_uri,original_sha256,work_relative_dir,sampling_rule,provenance,review_status

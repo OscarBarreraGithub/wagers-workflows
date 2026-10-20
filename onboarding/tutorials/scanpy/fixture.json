@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "genes": [
+    "FableA",
+    "FableB",
+    "FableC",
+    "QcToy"
+  ],
+  "samples": [
+    {
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1C",
+      "perturbation": "control"
+    },
+    {
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2C",
+      "perturbation": "control"
+    },
+    {
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2Q",
+      "perturbation": "pulseQ"
+    }
+  ],
+  "cells": [
+    {
+      "cell_id": "c01",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c02",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c03",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c04",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "cell_id": "c05",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "cell_id": "c06",
+      "experiment_id": "toyE",
+      "donor_id": "D1",
+      "sample_id": "S1Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "cell_id": "c07",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c08",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c09",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2C",
+      "perturbation": "control"
+    },
+    {
+      "cell_id": "c10",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "cell_id": "c11",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2Q",
+      "perturbation": "pulseQ"
+    },
+    {
+      "cell_id": "c12",
+      "experiment_id": "toyE",
+      "donor_id": "D2",
+      "sample_id": "S2Q",
+      "perturbation": "pulseQ"
+    }
+  ],
+  "counts": [
+    [
+      2,
+      4,
+      2,
+      0
+    ],
+    [
+      4,
+      2,
+      2,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      3
+    ],
+    [
+      6,
+      2,
+      2,
+      0
+    ],
+    [
+      8,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      3,
+      3,
+      4,
+      0
+    ],
+    [
+      5,
+      1,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      1,
+      2,
+      0
+    ],
+    [
+      9,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      6
+    ]
+  ]
+}

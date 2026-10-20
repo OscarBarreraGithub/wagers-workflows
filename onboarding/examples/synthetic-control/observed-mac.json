@@ -1,0 +1,95 @@
+{
+  "evidence_utc": "2026-10-19",
+  "scope": "Actual pinned upstream runtime on synthetic shapes; not biology or Linux validation",
+  "wrapper_version": "0.2.1-env001",
+  "runtime": {
+    "numpy": "1.24.4",
+    "scipy": "1.10.1",
+    "opencv": "4.8.1",
+    "pillow": "10.0.1",
+    "python": "3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:51:49) [Clang 16.0.6 ]",
+    "platform": "darwin"
+  },
+  "source_archive_sha256": "5ce9156babd235994e1769c82f40542e2cd4eaeac256ae31373ce02c26a8ab6d",
+  "settings": {
+    "quality": "high",
+    "min_area_um2": 200.0,
+    "max_area_um2": 3000.0,
+    "mfi_channels": [],
+    "positivity": "manual review only"
+  },
+  "first_run": {
+    "status": "succeeded-review-pending",
+    "processed_fields": 1,
+    "fiber_count": 61,
+    "started_utc": "2026-10-19T03:58:39.664244+00:00",
+    "finished_utc": "2026-10-19T03:58:43.836796+00:00"
+  },
+  "retry_run": {
+    "status": "succeeded-review-pending",
+    "processed_fields": 1,
+    "fiber_count": 61,
+    "started_utc": "2026-10-19T03:58:44.946500+00:00",
+    "finished_utc": "2026-10-19T03:58:49.127702+00:00"
+  },
+  "missing_channel": {
+    "exit_code": 2,
+    "message": "WAGERS ERROR: ValueError: Missing channel laminin_path",
+    "run_created": false
+  },
+  "input_and_manifest_unchanged": true,
+  "control": {
+    "purpose": "Synthetic shape fixture: actual upstream runtime/control only, not biological accuracy",
+    "origin": "Original deterministic synthetic shapes authored for this package; no third-party image data",
+    "seed": 102,
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint8",
+    "declared_um_per_pixel": 1,
+    "expected_segmentation_count": "No accuracy/count target asserted",
+    "generator_sha256": "758f1322a309bedfde14958e264f60ccaedaa9a7cfce3e87eb92e83aec7b3d48",
+    "files": {
+      "originals/must-survive.txt": "acbbe1818202eba21a6e93856c2a9574c8de2b16fb6aed346794537d193339a2",
+      "originals/DAPI.tif": "bc20fe78ecd2990847742bf4c39344a735b2b96051944096f502881eb5405030",
+      "originals/Laminin.tif": "ae8248477aa091317db2dbd6b97fcb69d83ffa402170422f91a81c9c88d3017f"
+    }
+  },
+  "biological_validation": "pending",
+  "linux_validation": "pending",
+  "observed_export_sha256": {
+    "fibers.csv": "0a796f8b4684b4aeac3a3dd2b368c790157785861f1b52bf67887c932a2fdc75",
+    "animal-summary.csv": "b3d34e16dbab29dd41d97695aaa284360878e8658c9c4bcf3c8a38cdc09a01b9"
+  },
+  "code_identity": {
+    "wrapper_version": "0.2.1-env001",
+    "sha256": {
+      "wagers.py": "f3bfda6ca52d9e9551a33eb0737e1eaf698164952599ce789a9fb3853f7472e2",
+      "environment.yml": "2cb77dc34b15c2b66a8ceaeed4cdf463831617363b9bde5697f1c862196b80c1",
+      "scripts/bootstrap.py": "f5b398b7723940dbd62753560fd1e3b21af85bc9c0f4a002d3019e5d216bb7f1",
+      "scripts/bootstrap.sh": "8762c829862144627260ad78ecc7320e44aefc7d90f9e1ed6130c5243fd786be",
+      "scripts/make_control.py": "758f1322a309bedfde14958e264f60ccaedaa9a7cfce3e87eb92e83aec7b3d48",
+      "scripts/validate_one.py": "648cb1f558488bc8b4ed27310bdb93b307ab0fc7a36870005aef25f0fe94c172",
+      "tests/test_safety.py": "47d3e78e755069e2d7969c36fc0a41b0c36220e3a48a8b315661559f250550ba"
+    },
+    "git_revision": "94c6647afa426070090a10c2c845fa860f354bc2",
+    "git_code_dirty": false
+  },
+  "focused_tests": {
+    "count": 9,
+    "implemented_review": "b7dca66f-cbeb-4e28-8933-e54a23c916ee",
+    "portable_equivalent_command": "onboarding/.runtime/env/bin/python -I -m unittest discover -s onboarding/tests -v",
+    "returncode": 0,
+    "started_utc": "2026-10-19T03:58:37.705280+00:00",
+    "finished_utc": "2026-10-19T03:58:38.217019+00:00",
+    "log_sha256": "08f4dbfaa37a1c41640fea047df2265842771ae8dbdc831a7fe21f59ba573221",
+    "executable_and_test_hashes_unchanged_during_checks": true
+  },
+  "actual_control_execution": {
+    "returncode": 0,
+    "started_utc": "2026-10-19T03:58:38.217169+00:00",
+    "finished_utc": "2026-10-19T03:58:49.220465+00:00",
+    "log_sha256": "051916b6b30c69c70f601d0190b3cc221c0681023398a5be3b6d5338ac425b74"
+  }
+}

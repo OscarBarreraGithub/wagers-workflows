@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "scope": "synthetic-software-contracts-only",
+  "execution_by": "implementer; independent read-only review pending",
+  "started_utc": "2026-10-19T09:40:34.121218+00:00",
+  "finished_utc": "2026-10-19T09:41:01.170041+00:00",
+  "platform": "macOS ARM64; existing isolated pinned Python environment; source CLI route",
+  "code_identity": {
+    "wrapper_version": "0.2.1-env001",
+    "sha256": {
+      "wagers.py": "21dda6a96f4daf5907892072f8a281e40e8a713595dc83cbced50d9d33b42541",
+      "scripts/tutorial_suite.py": "07e889897cc1cdf86bb6d9b6e067f46a3d20fcae2b5a49ffccca43e5a95b0256",
+      "scripts/make_tutorial.py": "84f554cbb3d3ff39baabb73f9d83a950ce4834a1bea84f57a6768c16f9d42f28",
+      "scripts/make_control.py": "758f1322a309bedfde14958e264f60ccaedaa9a7cfce3e87eb92e83aec7b3d48",
+      "tests/test_tutorial_suite.py": "70dc6d34a6a0312c50431b5bec7cb0347523b5e9c1935ab8d18c337fbe288dff",
+      "docs/tutorials.md": "cae076a71423f5938cd76db3494ca5fadf63f3b78a0152cc80e8de95b34b537d",
+      "skills/wagers-myotally/SKILL.md": "65f29e91a902032246ceb7e2d000657aea8b2d1ddcc32acdbf807e1935b3bb29"
+    },
+    "identity_files_absent": [],
+    "git_revision": "46cddda9153010c6c6aab4ce9c852babf43fe8f8",
+    "git_dirty": false
+  },
+  "pinned_source_sha256": {
+    "Myotally_V1.py": "115eb7d38edd68735c45808d5273b2df260c261fc164fd9d55a9db70bd736b5a",
+    "call_Myotally.py": "3de88960ab1f00e46dcf07eea80cae5919d924f485c9f8966ffd9f3f3a498773",
+    "cvt_to.py": "24662d5d23aa4a0e819968aa0fe3abf920ab0ad9ad8be9a0ee687b31d6ce6c51",
+    "draw_contour_outlines.py": "674cb77f25e0f0bceb784e2513f924b66a5d3dd2aa3526ed050568168ca2f5b2",
+    "fill_contours.py": "c152c5e765ad0b57759e8f4f2199ab738b2ae7037f021bd80d34e230502f0f7c",
+    "filter_contours.py": "632e1bb99038e70c203c548a3982cd1602d253a1a14638b27e420e706845c12f",
+    "get_contours.py": "fe82bedd7627c12a5a0537bf598e3c1b26ccdb967f4003a48f328f1f69cdec92",
+    "mfis.py": "b95dc0ab3b724d4d3f9b5b92f528ef09a84568ec308ff97951c1fad9fcab93f3"
+  },
+  "scenario_status": {
+    "upstream-and-preservation": "PASS",
+    "animal-muscle-review": "PASS",
+    "spreadsheet-contract": "PASS",
+    "failure-retry-calibration": "PASS",
+    "unsafe-output-and-hashes": "PASS"
+  },
+  "upstream_observed": {
+    "fields": {
+      "field-001": 61,
+      "field-002": 61,
+      "field-003": 61,
+      "field-004": 61
+    },
+    "fiber_rows": 244,
+    "biology": "pending"
+  },
+  "retry_observed": {
+    "fields": {
+      "field-001": 61
+    },
+    "fiber_rows": 61,
+    "biology": "pending"
+  },
+  "count_interpretation": "Observed runtime outputs only; no golden segmentation accuracy/count target",
+  "fictional_review_summary": [
+    {
+      "study_id": "FICTIONAL-SOFTWARE-CONTRACT",
+      "animal_id": "001",
+      "muscle_id": "DIA",
+      "sampled_fields": "1",
+      "accepted_fibers": "4",
+      "mean_csa_um2": "550.0",
+      "cnf_count": "2",
+      "dystrophin_scoring_complete": "true",
+      "dystrophin_positive_count": "2",
+      "dystrophin_fraction": "0.5",
+      "threshold_rule_id": "FICTIONAL-RULE-A",
+      "biological_validation": "pending"
+    },
+    {
+      "study_id": "FICTIONAL-SOFTWARE-CONTRACT",
+      "animal_id": "001",
+      "muscle_id": "TA-left",
+      "sampled_fields": "2",
+      "accepted_fibers": "5",
+      "mean_csa_um2": "480.0",
+      "cnf_count": "2",
+      "dystrophin_scoring_complete": "true",
+      "dystrophin_positive_count": "3",
+      "dystrophin_fraction": "0.6",
+      "threshold_rule_id": "FICTIONAL-RULE-A",
+      "biological_validation": "pending"
+    },
+    {
+      "study_id": "FICTIONAL-SOFTWARE-CONTRACT",
+      "animal_id": "002",
+      "muscle_id": "TA-left",
+      "sampled_fields": "1",
+      "accepted_fibers": "3",
+      "mean_csa_um2": "500.0",
+      "cnf_count": "1",
+      "dystrophin_scoring_complete": "false",
+      "dystrophin_positive_count": "",
+      "dystrophin_fraction": "",
+      "threshold_rule_id": "FICTIONAL-RULE-A",
+      "biological_validation": "pending"
+    }
+  ],
+  "calibration_comparison": {
+    "status": "PASS",
+    "retry": {
+      "fields": {
+        "field-001": 61
+      },
+      "fiber_rows": 61,
+      "biology": "pending"
+    },
+    "no_failed_run_created": true,
+    "scale_csa_ratio": 0.25,
+    "same_quality_and_pixel_area_bounds": true,
+    "csa_reporting_tolerance_um2": 0.05
+  },
+  "command_count": 16,
+  "exit_codes_match_expected": true,
+  "source_images_metadata_sentinel_and_existing_outputs_unchanged": true,
+  "source_tree_same": true,
+  "code_unchanged_during_execution": true,
+  "focused_runner_tests": {
+    "passed": 4,
+    "scope": "new evidence-location, fixture, preservation and summary-oracle contracts; no old/core/app suites repeated"
+  },
+  "skill_validation": "PASS quick_validate.py",
+  "unsupported": [
+    {
+      "task": "H&E regeneration/CSA",
+      "status": "UNSUPPORTED",
+      "instruction": "Use a dedicated validated route"
+    },
+    {
+      "task": "maximum GFP engraftment per muscle",
+      "status": "UNSUPPORTED",
+      "instruction": "Use a dedicated validated route"
+    },
+    {
+      "task": "slow/fast fiber typing",
+      "status": "UNSUPPORTED",
+      "instruction": "Use a dedicated validated route"
+    },
+    {
+      "task": "culture counts/function",
+      "status": "UNSUPPORTED",
+      "instruction": "Use a dedicated validated route"
+    },
+    {
+      "task": "transcriptomics",
+      "status": "UNSUPPORTED",
+      "instruction": "Use a dedicated validated route"
+    }
+  ],
+  "not_established": [
+    "installed launcher/module",
+    "Linux",
+    "real-image positivity",
+    "Excel GUI",
+    "lab-user access",
+    "biological validation"
+  ]
+}

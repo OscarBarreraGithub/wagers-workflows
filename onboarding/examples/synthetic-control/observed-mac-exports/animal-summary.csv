@@ -1,0 +1,2 @@
+study_id,animal_id,muscle_id,sampled_fields,accepted_fibers,mean_csa_um2,cnf_count,dystrophin_scoring_complete,dystrophin_positive_count,dystrophin_fraction,threshold_rule_id,biological_validation
+SYNTHETIC-CONTROL,SYNTHETIC-A001,TA-left,1,61,2270.065573770492,61,false,,,,pending

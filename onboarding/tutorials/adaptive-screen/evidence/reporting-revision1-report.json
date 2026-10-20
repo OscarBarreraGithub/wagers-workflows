@@ -1,0 +1,131 @@
+{
+  "actual_host": "Darwin",
+  "actual_linux_execution": "NOT_RUN",
+  "checks": [
+    {
+      "name": "classifier_Linux_PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Linux_FAIL",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Linux_RUNNING",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Linux_None",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Darwin_PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Darwin_FAIL",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_Windows_PASS",
+      "status": "PASS"
+    },
+    {
+      "name": "classifier_FreeBSD_FAIL",
+      "status": "PASS"
+    },
+    {
+      "name": "syntax_suite.py",
+      "status": "PASS"
+    },
+    {
+      "name": "syntax_tutorial.py",
+      "status": "PASS"
+    },
+    {
+      "name": "syntax_proposer.py",
+      "status": "PASS"
+    },
+    {
+      "name": "syntax_simulator.py",
+      "status": "PASS"
+    },
+    {
+      "name": "syntax_contract.py",
+      "status": "PASS"
+    },
+    {
+      "name": "Linux_exception_reports_fail",
+      "status": "PASS"
+    },
+    {
+      "name": "Darwin_exception_reports_fail",
+      "status": "PASS"
+    },
+    {
+      "name": "no_model_simulator_or_sklearn_imported",
+      "status": "PASS"
+    },
+    {
+      "name": "historic_run_files_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "source_bytes_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "model_selection_ledger_and_runtime_pins_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "error_path_fixtures": [
+    {
+      "exitcode": 1,
+      "linux_field": "FAIL",
+      "simulated_platform": "Linux",
+      "status": "FAIL",
+      "stdout": {
+        "failed": 0,
+        "passed": 0,
+        "report": "${PACKAGE}/runs/reporting-revision1/injected-Linux-failure/suite-report.json",
+        "status": "FAIL"
+      },
+      "suite_report_sha256": "ba5371c8efc51922437e76eb4e492c1dad7f4faef803de35457a38f95f8c3d42"
+    },
+    {
+      "exitcode": 1,
+      "linux_field": "NOT_RUN",
+      "simulated_platform": "Darwin",
+      "status": "FAIL",
+      "stdout": {
+        "failed": 0,
+        "passed": 0,
+        "report": "${PACKAGE}/runs/reporting-revision1/injected-Darwin-failure/suite-report.json",
+        "status": "FAIL"
+      },
+      "suite_report_sha256": "e8a2effb32eda528b3d524f5f93d204b8c0e108dfcbe0b6cc1e3e1d1e2471ede"
+    }
+  ],
+  "failed": 0,
+  "full_suite_executed": false,
+  "git_status_before": "",
+  "model_executed": false,
+  "note": "Injected platform labels below are classifier/error-report fixtures, not Linux execution or numeric results.",
+  "passed": 19,
+  "python": "3.12.12",
+  "python_executable_sha256": "51041dcef59a872d4e411dfd26f6264f70bd67294bebbe52a707490726f0d1a6",
+  "source_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_PROMPT.md": "785dde5b0de3c6f9e2d22969c32ec5b4e66d58403061e3e4f28841def39fbd7e",
+    "README.md": "2b114e45ec2e9c165ca25c70b715a0d6cc8bb629b581a9fe3dee6d9527dac861",
+    "contract.py": "4c944df5cd6cdab93874a238ff199821f6bdf385f66814dcc020112984821ee6",
+    "proposer.py": "c165c41b405cf8f79b94373ca23d51c405628eb8e93467f00328b12d84247bfe",
+    "requirements.txt": "c7f6b632c4c42609ad1e3f7c9942f31674e179439572f5a00dc077716b6ab836",
+    "simulator.py": "7e58430841a940835bd1d8a774b228b1eca2aa08d61c9b178779d26341f9ff30",
+    "suite.py": "860476e862cf252b524c648d25a41ee173f2e4a588c50fc96f55c55157d5f400",
+    "tutorial.py": "bd5ad95d47238e64653a6eb14ee953e0503606088b4eeb69eae9023a09963b1e"
+  },
+  "status": "PASS",
+  "tested_commit": "57c7a8313526ec4d17f57f24c3cd13f405cf372d"
+}

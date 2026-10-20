@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "observed_utc": "2026-10-19T10:45:04.913212+00:00",
+  "tested_commit": "15560ed44d1a6173ecbd0b41b0dd1bd6eeac193f",
+  "tested_package_tree": "121fe3b25b48d4b2c309109d76d8d0892048c428",
+  "tested_package_git_status": "",
+  "evidence_scope": "New bounded runtime/output contract verification. VERIFICATION.json remains byte-identical historical evidence for 44941334a268549d89b765ae5159e01a1fd91ac2; its original 28-case run is not attributed to changed code. This summary is the only addition after the tested commit; copied-package Git identity is unknown and code SHA256s identify executed bytes.",
+  "platform": "macOS arm64; existing Python 3.12.12 pinned task environment reused without installation, chmod or environment copy",
+  "code_sha256": {
+    ".gitignore": "ff245b8c18a499c36089d017b36679d9a24c328b59e08555cfba43fee488ab0a",
+    "AGENT_TASK.md": "d918d4f10bcdca9779e5d76106c85b7f056ca830d85dc587d19782c02bd437df",
+    "README.md": "3dadd5e9ce1d06cf7d8a55137895d22e88f8c0141b18250a199670d70065b769",
+    "artifacts.json": "7f1a4fc6f8c0b171da0a1aafd9dba8cbbdbbc812b18978774e41083392c48e13",
+    "fixture.json": "d6f41f4ffb01d54e7e06e6e7a321d01dc0d600e93ffed58573a42c574e8b7fc0",
+    "requirements.lock": "ce11fe9b01bc6fcac1b5ee51f53486fe84073003fa751995f1fa7cb43af7ba7c",
+    "setup_runtime.py": "8e433e3da0ce7cdcd4e916d3c69a0816bbc6cacc163b96f7b106c1149ff2fac1",
+    "test_contract.py": "5bf0396ec2c04518c7b1c5d973c80142f8c248d8db9c522a5cf82f777b280b3a",
+    "truth.json": "e344fb65721b4feeda21865455912089075489a4cd6d48f2d6baaaee386bdb54",
+    "tutorial.py": "17ab5d57374bbe75082d2c40ff9e5f0fe5dfc214fa72564124ea12ca3e298fdb",
+    "workflow.py": "ea5b84e251656fdbc41543e15bb9ad09ccadd25ae8037ca8a9fce75b3a71b530"
+  },
+  "contract_tests": {
+    "command": "python3 -B onboarding/tutorials/scanpy/test_contract.py",
+    "status": "PASS",
+    "tests": 7,
+    "interpreter": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "scope": "External/default paths, private modes/reuse, input overlap/symlinks, source/runtime/evidence ancestors, exclusive setup prefix reservation (no install), interpreter/version/pin/receipt checks, runtime mutation/failure status, child selection and no-bytecode propagation. One initial test expectation was corrected to account for a macOS system-prefix symlink; final code passes."
+  },
+  "installed_exercise": {
+    "status": "PASS",
+    "executions": 1,
+    "affected_suite_executions": 1,
+    "cases_passed": 30,
+    "cases_total": 30,
+    "checks": {
+      "runtime": "PASS",
+      "invalid_inputs": "PASS",
+      "failure_report": "PASS",
+      "corrected_retry": "PASS",
+      "independent_arithmetic": "PASS",
+      "path_safety": "PASS",
+      "unchanged_inputs": "PASS"
+    },
+    "elapsed_seconds": 28.931,
+    "layout": "Copied source directory 0555, all 12 files 0444; explicit supplied a338 task .runtime, unchanged permissions; fresh private outputs with spaces outside copied package/runtime; unrelated working directory.",
+    "commands": [
+      "\"<existing-prefix>/bin/python\" -B \"<readonly-package>/tutorial.py\" --runtime-prefix \"<existing-prefix>\" --output \"<private outputs>/suite run\"",
+      "\"<existing-prefix>/bin/python\" -B \"<readonly-package>/workflow.py\" --runtime-prefix \"<existing-prefix>\" --input \"<readonly-package>/fixture.json\" --output \"<private outputs>/direct fixture readout\"",
+      "\"<existing-prefix>/bin/python\" -B \"<readonly-package>/workflow.py\" --input \"<readonly-package>/fixture.json\" --output \"<private outputs>/runtime selection failure\""
+    ],
+    "exit_codes": [
+      0,
+      0,
+      1
+    ],
+    "failure_retry": "Invalid/contradictory identity and count variants exit 1, validation FAIL and analysis NOT_RUN, no H5AD; corrected original counts/metadata in a fresh retry PASS. Reusing successful or failed output exits 2.",
+    "path_refusals": [
+      "successful/failed output reuse",
+      "input overlap",
+      "input/output/ancestor symlinks",
+      "source destination",
+      "selected-runtime destination",
+      "nested results"
+    ],
+    "runtime_selection_failure": {
+      "status": "FAIL",
+      "exit_code": 1,
+      "runtime_check": "FAIL",
+      "failed_stage": "runtime",
+      "stages": {
+        "validate": "PASS",
+        "qc": "NOT_RUN",
+        "filter": "NOT_RUN",
+        "normalize_log": "NOT_RUN",
+        "aggregate": "NOT_RUN",
+        "roundtrip": "NOT_RUN"
+      },
+      "message": "runtime mismatch: interpreter sys.prefix differs from copied-package default .runtime"
+    },
+    "direct_fixture": "PASS against the same literal/scalar oracle as the suite; raw integer counts, all metadata and both H5AD results verified. QC and pseudobulk JSON SHA256s exactly match the historical 4494133 outputs.",
+    "observed": {
+      "input_cells": 12,
+      "retained_cells": 8,
+      "donors": 2,
+      "samples": 4,
+      "qc_totals": [
+        8,
+        8,
+        4,
+        10,
+        10,
+        1,
+        10,
+        10,
+        0,
+        10,
+        12,
+        8
+      ],
+      "pseudobulk": {
+        "S1C": [
+          6,
+          6,
+          4,
+          0
+        ],
+        "S1Q": [
+          14,
+          4,
+          2,
+          0
+        ],
+        "S2C": [
+          8,
+          4,
+          8,
+          0
+        ],
+        "S2Q": [
+          16,
+          2,
+          4,
+          0
+        ]
+      },
+      "normalization_target": 100,
+      "arithmetic_tolerance": 1e-12,
+      "raw_integer_counts_and_all_identities_roundtrip": true
+    },
+    "runtime_identity_unchanged": true,
+    "pins_checked": 53,
+    "install_report_sha256": "c23961b1c0694979328073d4ee2a3dea48e56effc4f55a3014d5f133d9509539"
+  },
+  "before_after_fingerprints": {
+    "original_package_unchanged": true,
+    "readonly_copy_unchanged": true,
+    "original_runtime_unchanged": true,
+    "runtime_entries": 21453,
+    "scope": "All copied/original tracked package files; all runtime regular-file bytes, symlink targets, modes, sizes and mtimes plus runtime directories. Access times excluded. No new copied-source bytecode or files. Runtime writable permission bits were preserved; read-only consumption is established by unchanged manifests, not a permission change. External base-interpreter target bytes were not separately fingerprinted.",
+    "manifests_sha256": {
+      "copy-before.json": "3627882f23b1aaf8aadaf370ae96a490caedba5b5d29b7754b546b3e26bc19c7",
+      "original-before.json": "6bd94525296c32274d3f3591692d4f056fbe311b18e2f5470c0e9ea4c1fa71be",
+      "runtime-before.json": "7abfb28dcd62fc883dd249966ace3c5413dda0411e26480c7b19da29239ecfa0",
+      "copy-after.json": "3627882f23b1aaf8aadaf370ae96a490caedba5b5d29b7754b546b3e26bc19c7",
+      "original-after.json": "6bd94525296c32274d3f3591692d4f056fbe311b18e2f5470c0e9ea4c1fa71be",
+      "runtime-after.json": "7abfb28dcd62fc883dd249966ace3c5413dda0411e26480c7b19da29239ecfa0"
+    }
+  },
+  "private_evidence_root": "runs/installed-check-20261019/",
+  "evidence_sha256": {
+    "execution-record.json": "ad3e302b74e3d2b54b793f9ef0d617059a07d72bb96e81b318e0ad183c3546cf",
+    "exercise.py": "ee1e18a99395bb551475859607cafe6bde4f0696ac77549985da4e8295bba0b1",
+    "0-console.log": "b3da616ec2b6ff306f8e8573cde49a4985779190da319d2e95545393467dd839",
+    "1-console.log": "fbd68ca350b7a466e876108291d713b2daea39d6314c0de1478f26db898dec81",
+    "2-console.log": "a93631835f95b4cc703bf51b191da429a7edf766469674d888c7165067e806d7",
+    "private user outputs with spaces/suite run/suite-report.json": "2602ccc8a353642c2160c0d24a2a82f5995e2ae99231c400b6065b45c8cd3549",
+    "private user outputs with spaces/suite run/ambiguous-assignment/report.json": "81c28d56234522ea60c840e81108bccb1549c47848ca8b61b96ac78b546cbbdb",
+    "private user outputs with spaces/suite run/corrected-retry/report.json": "c820deaaf52e5840e0a83582049bf1c463463bcf455ebd4caf57900f153785ef",
+    "private user outputs with spaces/suite run/corrected-retry/qc.json": "d20378204824be46057abba5b2c81ec708c559cbed3b7c3cacbcfd7e3300103b",
+    "private user outputs with spaces/suite run/corrected-retry/pseudobulk.json": "e9adba371d471b8059e61173a375e9d1629b9bdd7871e3e5d598d1cedbc15695",
+    "private user outputs with spaces/suite run/corrected-retry/readout.h5ad": "a0947c2a5ebd46f94f0e871567d42aab798a838569951f834448bbae6b142d0c",
+    "private user outputs with spaces/suite run/corrected-retry/pseudobulk.h5ad": "46b1a79e85d93365306a0ee8a0498e3876fb244c3d35806c70d722ae38e4a8f1",
+    "private user outputs with spaces/suite run/logs/under-source.log": "5fbf37cead3f815150ef5f153a71cfa2db8807d36a0e2b8e91fd32e8ceb12076",
+    "private user outputs with spaces/suite run/logs/under-runtime.log": "720f32321fd408851ce0276991e6f4639d5a97ea7bfddd447e39e1a9684a9a21",
+    "private user outputs with spaces/suite run/logs/nested-results.log": "c79db3f80ae99f6fa4e33ea69b88f57343ba2fcfecfd94e6deb655205a8be156",
+    "private user outputs with spaces/direct fixture readout/report.json": "c820deaaf52e5840e0a83582049bf1c463463bcf455ebd4caf57900f153785ef",
+    "private user outputs with spaces/direct fixture readout/qc.json": "d20378204824be46057abba5b2c81ec708c559cbed3b7c3cacbcfd7e3300103b",
+    "private user outputs with spaces/direct fixture readout/pseudobulk.json": "e9adba371d471b8059e61173a375e9d1629b9bdd7871e3e5d598d1cedbc15695",
+    "private user outputs with spaces/direct fixture readout/readout.h5ad": "a0947c2a5ebd46f94f0e871567d42aab798a838569951f834448bbae6b142d0c",
+    "private user outputs with spaces/direct fixture readout/pseudobulk.h5ad": "46b1a79e85d93365306a0ee8a0498e3876fb244c3d35806c70d722ae38e4a8f1",
+    "private user outputs with spaces/runtime selection failure/report.json": "7a3f251723d57cdf2086cb0b3a310f82176e6d3629c76d0d52ddbac5970c6ec0"
+  },
+  "preserved_from_integrated_5ca2c0c": {
+    "requirements.lock": "ce11fe9b01bc6fcac1b5ee51f53486fe84073003fa751995f1fa7cb43af7ba7c",
+    "fixture.json": "d6f41f4ffb01d54e7e06e6e7a321d01dc0d600e93ffed58573a42c574e8b7fc0",
+    "truth.json": "e344fb65721b4feeda21865455912089075489a4cd6d48f2d6baaaee386bdb54",
+    "artifacts.json": "7f1a4fc6f8c0b171da0a1aafd9dba8cbbdbbc812b18978774e41083392c48e13",
+    "VERIFICATION.json": "c92f94fb85f9272f94b7e60de8a3e38a036042f5cc1f9bef7d9bf06bcabac721"
+  },
+  "stop_condition": "Stopped after one passing affected suite/read-only exercise and focused contracts; no further suites, local installs or environment modifications.",
+  "not_run": [
+    "Fresh setup_runtime.py installation (only exclusive prefix reservation contract tested locally)",
+    "Linux execution and full installed suite",
+    "Successful default .runtime execution of changed code (default selection contract checked; external selection executed)"
+  ],
+  "pending": [
+    "Manager-owned independent code review",
+    "Manager Linux fresh external-prefix build and installed full-suite gate after review"
+  ],
+  "limits": "Synthetic software mechanics only. No biology/DE/causal claim. Ordinary filesystem protections do not provide hostile concurrent filesystem isolation. Runtime versions and receipt checked before/after by reports; full byte invariance established by this bounded exercise. Historical source evidence stays separate."
+}
