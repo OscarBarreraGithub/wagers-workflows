@@ -25,9 +25,9 @@ cd wagers-workflows
 > compute on login nodes, or reinstall/retest an already verified owner setup.
 
 See [setup details and site prerequisites](HANDOFF.md#copy-to-your-setup-agent).
-Cold portability job `54148277` is unverified/pending; actual site prerequisites
-and intended-user access must be established. It does not gate reuse of the
-existing verified owner setup when accessible.
+Fresh Linux installation job `54148277` completed with a manager-inspected PASS
+for the build, installed module and all five synthetic suites. Site prerequisites
+and intended-user access must still be established for each deployment.
 
 Reuse the **existing owner-hosted cluster module** for the immediate synthetic
 demo when accessible. In an allocated CPU session, use the exact module root
@@ -42,8 +42,7 @@ wagers-doctor --json
 Module loading does not allocate compute or grant access. Amy's access is
 unverified; the module file is currently owner-readable only. GitHub signup is
 not required to read or clone this public source. The separate fresh installer
-is for maintainers when a rebuild is needed; its pending portability test does
-not gate a demo using the existing accessible installation.
+is for maintainers when a rebuild is needed.
 
 Five synthetic tutorials exercise analysis and review mechanics. Use the
 [workflow chooser](onboarding/README.md), then the
@@ -51,6 +50,6 @@ Five synthetic tutorials exercise analysis and review mechanics. Use the
 These exercises do not establish biological accuracy.
 
 [Current verification](onboarding/docs/current-verification.md) records historical
-Linux/module passes separately from the **pending fresh cold installation**.
-This documentation handoff does not close runtime verification or establish
-Amy's access, Excel compatibility or real-study acceptance.
+Linux/module passes and the **completed fresh Linux installation PASS**.
+This documentation handoff does not establish Amy's access, Excel compatibility
+or real-study acceptance.

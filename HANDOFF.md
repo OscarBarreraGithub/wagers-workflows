@@ -28,17 +28,17 @@ Follow the [installer contract](onboarding/deploy/install/README.md) for actual
 site preconditions: Linux x86_64, selected site Python 3.12+, Mamba,
 Singularity/Apptainer, Git and curl, exact executable/version/hash declarations,
 and authorized final storage and compute allocation. These are site-specific;
-source availability does not establish them. Cold job `54148277` is still
-unverified/pending, so no new cold-install success is claimed. Reuse of the
-existing accessible verified setup does not depend on that portability test.
+source availability does not establish them. Fresh Linux installation job
+`54148277` completed with a manager-inspected PASS for the build, installed
+module and all five synthetic suites. Each deployment still needs its own site
+prerequisites and intended-user access checks.
 
 Reuse the **existing owner-hosted cluster installation** for the immediate demo
 when accessible.
 Its historical combined module runs passed all five tutorials; see
-[current verification](onboarding/docs/current-verification.md). The fresh
-installer and future lab transfer are separate maintainer work; cold job
-`54148277` remains pending as a portability test, not a prerequisite to the
-existing demo. Rebuild only when needed. Ordinary users do not install packages or rebuild
+[current verification](onboarding/docs/current-verification.md). Future lab
+transfer remains separate maintainer work and does not gate the existing demo.
+Rebuild only when needed. Ordinary users do not install packages or rebuild
 runtimes. Biological acceptance is separate and need not block a synthetic demo.
 
 ## Lab user: existing cluster demo
@@ -94,7 +94,7 @@ allocates compute nor submits a job. Require the fresh installation, all five
 suites through its new module, shell load/unload and intended-user access evidence
 before declaring a fully validated release. These detailed installer acceptance
 criteria apply to a fully validated release, not the initial code installation
-handoff. The runtime task remains open.
+handoff. Intended-user access and lab/science acceptance remain unverified.
 
 ## Copy to your usage agent
 
